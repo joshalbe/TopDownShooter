@@ -12,7 +12,7 @@ public class PlayerShootBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && _bulletEmitter)
+        if (Input.GetButton("Fire1") && _bulletEmitter)
             _bulletEmitter.Fire(transform.forward * _shotSpeed);
     }
 }
